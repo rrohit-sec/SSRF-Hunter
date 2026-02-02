@@ -1,7 +1,5 @@
 # SSRF-Detection-Tool
 
-# SSRF Detection Tool Readme.md
-
 <div align="center">
 
 ![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)
