@@ -98,7 +98,7 @@ Pre-configured payloads for:
 
 ```bash
 # Clone the repository
-git clone <https://github.com/yourusername/ssrf-detection-tool.git>
+git clone https://github.com/rrohit-sec/SSRF-Detection-Tool.git
 
 # Navigate to the directory
 cd ssrf-detection-tool
@@ -560,18 +560,6 @@ furnished to do so, subject to the following conditions:
 
 ```
 
----
-
-## 👥 Credits
-
-### Author
-
-**Your Name** - *Initial work* - [@yourusername](https://github.com/yourusername)
-
-### Contributors
-
-See the list of [contributors](https://github.com/yourusername/ssrf-detection-tool/contributors) who participated in this project.
-
 ### Acknowledgments
 
 - OWASP for security research and documentation
@@ -581,40 +569,9 @@ See the list of [contributors](https://github.com/yourusername/ssrf-detection-to
 
 ---
 
-## 📈 Statistics
-
-[GitHub stars](https://img.shields.io/github/stars/yourusername/ssrf-detection-tool?style=social)
-
-[GitHub forks](https://img.shields.io/github/forks/yourusername/ssrf-detection-tool?style=social)
-
-[GitHub watchers](https://img.shields.io/github/watchers/yourusername/ssrf-detection-tool?style=social)
-
----
-
-## 🌟 Star History
-
-[Star History Chart](https://api.star-history.com/svg?repos=yourusername/ssrf-detection-tool&type=Date)
-
----
-
-<div align="center">
-
-**Made with ❤️ for the Security Community**
-
-If this tool helped you find bugs, consider:
-
-- ⭐ Starring the repository
-- 🐛 Reporting bugs
-- 💡 Suggesting features
-- 🤝 Contributing code
-
 </div>
 
 ---
-
-## 📝 Changelog
-
-### [1.0.0] - 2024-01-XX
 
 ### Added
 
