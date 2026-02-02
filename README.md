@@ -319,36 +319,6 @@ dict://internal:11211/stat
 
 ---
 
-## 🏗️ Technical Architecture
-
-### Core Components
-
-```
-ssrf_detector.py
-├── SSRFPayloadGenerator    # Payload generation engine
-│   ├── ip_variations()
-│   ├── url_bypass_variations()
-│   ├── protocol_smuggling()
-│   ├── cloud_metadata_payloads()
-│   └── internal_network_scan()
-│
-├── CallbackHandler         # HTTP callback server
-│   ├── do_GET()
-│   ├── do_POST()
-│   └── log_message()
-│
-├── SSRFScanner            # Core scanning engine
-│   ├── test_url()
-│   ├── _analyze_response()
-│   └── scan()
-│
-└── SSRFDetectorGUI        # Tkinter GUI
-    ├── setup_gui()
-    ├── start_scan()
-    └── monitor_callbacks()
-
-```
-
 ### Detection Logic Flow
 
 ```
