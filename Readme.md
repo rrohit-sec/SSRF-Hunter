@@ -10,8 +10,6 @@
 [![Security](<https://img.shields.io/badge/Security-Tool-red?style=for-the-badge&logo=hackaday&logoColor=white>)]()
 [![Bug Bounty](<https://img.shields.io/badge/Bug%20Bounty-Ready-orange?style=for-the-badge>)]()
 
-<img src="<https://img.shields.io/github/stars/yourusername/ssrf-hunter-pro?style=social>" alt="Stars">
-<img src="<https://img.shields.io/github/forks/yourusername/ssrf-hunter-pro?style=social>" alt="Forks">
 
 ███████╗███████╗██████╗ ███████╗    ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗
 ██╔════╝██╔════╝██╔══██╗██╔════╝    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗
@@ -20,139 +18,7 @@
 ███████║███████║██║  ██║██║         ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║
 ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝         ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
 
-
-**A powerful, single-file GUI tool for detecting SSRF vulnerabilities in bug bounty programs**
-
-[Features](#-features) •
-[Installation](#-installation) •
-[Usage](#-usage) •
-[Documentation](#-documentation) •
-[Payloads](#-payload-types) •
-[Contributing](#-contributing)
-
----
-
 </div>
-
-## 📋 Table of Contents
-
-- [About](#-about)
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Documentation](#-documentation)
-- [Payload Types](#-payload-types)
-- [Cloud Metadata Endpoints](#-cloud-metadata-endpoints)
-- [Bypass Techniques](#-bypass-techniques)
-- [Callback Infrastructure](#-callback-infrastructure)
-- [Contributing](#-contributing)
-- [Legal Disclaimer](#-legal-disclaimer)
-- [License](#-license)
-
----
-
-## 🎯 About
-
-**SSRF Hunter Pro** is a comprehensive, all-in-one Server-Side Request Forgery (SSRF) detection tool designed specifically for bug bounty hunters and security researchers. Built with a sleek hacker-themed GUI, it combines multiple detection techniques, bypass methods, and callback infrastructure into a single, portable Python file.
-
-### Why SSRF Hunter Pro?
-
-- 🔥 **Single File** - No complex installation, just run and go
-- 🎨 **Hacker Theme** - Professional dark theme with neon green accents
-- 🚀 **Real-World Ready** - Built for actual bug bounty programs
-- 📡 **Built-in Callback Servers** - HTTP and DNS callback infrastructure
-- ☁️ **Cloud-Aware** - Targets all major cloud provider metadata endpoints
-- 🔓 **Bypass Arsenal** - Extensive collection of WAF/filter bypass techniques
-
----
-
-## ✨ Features
-
-### 🔍 Detection Capabilities
-
-| Feature | Description |
-|---------|-------------|
-| **Basic SSRF** | Direct SSRF detection with response analysis |
-| **Blind SSRF** | Out-of-band detection via callback servers |
-| **Partial SSRF** | Response header analysis for partial reads |
-| **Protocol Smuggling** | file://, gopher://, dict://, ldap:// protocols |
-
-### 📡 Callback Infrastructure
-
-| Feature | Description |
-|---------|-------------|
-| **HTTP Server** | Built-in HTTP/HTTPS callback receiver |
-| **DNS Server** | DNS callback for DNS-only SSRF |
-| **Token Tracking** | Unique tokens per injection point |
-| **Request Logging** | Timestamp, source IP, headers logging |
-
-### 🔓 Bypass Techniques
-
-| Technique | Examples |
-|-----------|----------|
-| **IP Encoding** | Decimal, Hex, Octal, Mixed |
-| **IPv6 Mapping** | ::ffff:127.0.0.1, [::1] |
-| **URL Parser Confusion** | @, #, whitespace tricks |
-| **DNS Rebinding** | Dynamic DNS resolution |
-| **Redirect Chains** | Open redirect exploitation |
-
-### ☁️ Cloud Metadata Targeting
-
-- ✅ Amazon Web Services (AWS)
-- ✅ Google Cloud Platform (GCP)
-- ✅ Microsoft Azure
-- ✅ DigitalOcean
-- ✅ Alibaba Cloud
-- ✅ Oracle Cloud
-- ✅ Kubernetes
-
-### 🌐 Network Discovery
-
-- Internal port scanning via SSRF
-- Service fingerprinting
-- Response time analysis
-- Common service detection
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-### Main Scanner Interface
-```
-
-**A powerful, single-file GUI tool for detecting SSRF vulnerabilities in bug bounty programs**
-
-[Features](#-features) •
-[Installation](#-installation) •
-[Usage](#-usage) •
-[Documentation](#-documentation) •
-[Payloads](#-payload-types) •
-[Contributing](#-contributing)
-
----
-
-</div>
-
-## 📋 Table of Contents
-
-- [About](#-about)
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Documentation](#-documentation)
-- [Payload Types](#-payload-types)
-- [Cloud Metadata Endpoints](#-cloud-metadata-endpoints)
-- [Bypass Techniques](#-bypass-techniques)
-- [Callback Infrastructure](#-callback-infrastructure)
-- [Contributing](#-contributing)
-- [Legal Disclaimer](#-legal-disclaimer)
-- [License](#-license)
-
----
 
 ## 🎯 About
 
@@ -224,45 +90,22 @@
 
 ### Main Scanner Interface
 
-```
+**A powerful, single-file GUI tool for detecting SSRF vulnerabilities in bug bounty programs**
 
-┌─────────────────────────────────────────────────────────────────┐
-│  ⚡ SSRF Hunter Pro ⚡                                          │
-├─────────────────────────────────────────────────────────────────┤
-│  [🔍 SSRF Scanner] [🧬 Payloads] [📡 Callback] [☁️ Cloud] [🌐] │
-├─────────────────────────────────────────────────────────────────┤
-│  Target URL: http://example.com/fetch?url=INJECT               │
-│  Callback:   [your-server.com:8888](http://your-server.com:8888/)                              │
-│                                                                 │
-│  ☑ Basic SSRF    ☑ Blind SSRF    ☑ Protocol Smuggling         │
-│  ☑ Cloud Meta    ☑ Bypass Techniques                           │
-│                                                                 │
-│  [▶ START SCAN]  [⬛ STOP]  [📋 Clear Log]                     │
-├─────────────────────────────────────────────────────────────────┤
-│  [12:34:56] [INFO] Starting SSRF scan...                       │
-│  [12:34:57] [SCAN] Testing: http://169.254.169.254/...         │
-│  [12:34:58] [SUCCESS] VULNERABLE! Indicator: metadata          │
-└─────────────────────────────────────────────────────────────────┘
+---
 
-```
+## 📸 Screenshots
+
+<div align="center">
+
+### Main Scanner Interface
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4fc00d61-afc8-4c77-ae16-f7e7a5f68a32" />
+
 
 ### Payload Generator
 
-```
-
-┌─────────────────────────────────────────────────────────────────┐
-│  Payload Type:                    │  Generated Payloads:        │
-│  ○ IP Address Bypasses            │  ──────────────────────────│
-│  ○ Localhost Variations           │  [http://2130706433/](http://127.0.0.1/)         │
-│  ○ URL Parser Confusion           │  [http://0x7f000001/](http://127.0.0.1/)         │
-│  ○ Protocol Smuggling             │  [http://0177.0.0.01/](http://127.0.0.1/)        │
-│  ○ Redirect Bypasses              │  http://127.0.0.1.nip.io/   │
-│  ○ DNS Rebinding                  │  http://[::1]/              │
-│                                   │  [http://127.1/](http://127.0.0.1/)              │
-│  [⚡ Generate] [📋 Copy] [💾 Export] │                           │
-└─────────────────────────────────────────────────────────────────┘
-
-```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dd130c2f-4938-4d22-8b6d-2614511626eb" />
 
 </div>
 
@@ -282,7 +125,7 @@
 git clone <https://github.com/yourusername/ssrf-hunter-pro.git>
 
 # Navigate to directory
-cd ssrf-hunter-pro
+cd 
 
 # Run the tool
 python ssrf_hunter.py
