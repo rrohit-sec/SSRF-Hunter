@@ -1,6 +1,6 @@
 # SSRF-Detection-Tool
 
-<div align="center">
+<div>
 
 **A Professional Server-Side Request Forgery (SSRF) Detection Tool for Bug Bounty Hunters and Security Researchers**
 
