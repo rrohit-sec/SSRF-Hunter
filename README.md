@@ -2,14 +2,6 @@
 
 <div align="center">
 
-![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)
-
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-
-![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)
-
-![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen.svg)
-
 **A Professional Server-Side Request Forgery (SSRF) Detection Tool for Bug Bounty Hunters and Security Researchers**
 
 </div>
